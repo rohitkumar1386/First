@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM</title>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <!--Text Input-->
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br><br>
+        <!--Password Input-->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        <!--Email Input-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example123@gmail.com" required><br><br>
+        <!--Radio Buttons-->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label><br><br>
+        <!--Checkboxes-->
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="trv" name="hobbies" value="Reading">
+        <label for="trv">Travelling</label><br>
+        <input type="checkbox" id="game" name="hobbies" value="Gaming">
+        <label for="game">Gaming</label><br><br>
+        <!--Dropdown List-->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+        <option>--select--</option>   
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="india">India</option>
+        <option value="uk">UK</option>
+    </select><br><br>
+    <!--Textarea-->
+    <label for="bio">Bio:</label><br>
+    <textarea name="bio" id="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea><br><br>
+    <!--File Upload-->
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" name="resume" id="resume"><br><br>
+    <!-- Hidden Input -->
+    <input type="hidden" name="planet" value="Earth">
+    <!-- Submit Butoon -->
+     <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
